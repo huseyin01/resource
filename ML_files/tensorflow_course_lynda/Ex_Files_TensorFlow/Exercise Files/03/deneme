@@ -1,0 +1,20 @@
+# Creating variable for parameter slope (W) with initial value as 0.4
+
+W = tf.Variable([.4], tf.float32)
+
+# Creating variable for parameter bias (b) with initial value as -0.4
+b = tf.Variable([-0.4], tf.float32)
+
+# Creating placeholders for providing input or independent variable, denoted by x
+x = tf.placeholder(tf.float32)
+
+# Equation of Linear Regression
+linear_model = W * x + b
+
+# Initializing all the variables
+sess = tf.Session()
+init = tf.global_variables_initializer()
+sess.run(init)
+
+# Running regression model to calculate the output w.r.t. to provided x values
+print(sess.run(linear_model {x:[1, 2, 3, 4]}))

@@ -1,0 +1,6 @@
+kjhkjhk
+
+
+>>> activate tensorlow
+
+>>> condo install -c condo-forge google-api-python-client
